@@ -114,7 +114,7 @@ body {
       grid-template-columns: repeat(auto-fit, 200px);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  padding: 40px 80px;
+  padding: 40px 112px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
