@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Интернет-магазин</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <div class="field">
+                <label for="name" class="field-label">Имя:</label>
+                <input id="name" name=name type="text" class="field-input" pattern="[a-zA-ZА-Яа-я]*"
+                    title="Имя содержит только буквы">
+            </div>
+
+            <div class="field">
+                <label for="phone" class="field-label">Телефон:</label>
+                <input id="phone" name="phone" type="text" class="field-input" pattern="\+7\(\d{3}\)\d{3}-\d{4}"
+                    title="Телефон имеет вид +7(000)000-0000">
+            </div>
+
+            <div class="field">
+                <label for="email" class="field-label">E-mail:</label>
+                <input id="email" name="email" type="text" class="field-input"
+                    pattern="^[a-zа-я0-9._-]+@[a-z0-9-_]+\.[a-z0-9-_]{2,4}"
+                    title="E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru">
+            </div>
+
+            <div class="field">
+                <label for="text" class="field-label">Текст:</label>
+                <input id="text" name="text" type="text" class="field-input">
+            </div>
+
+            <button type="submit" class="submit-button">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <script src="js/regexp.js"></script>
+</body>
+
+</html>
