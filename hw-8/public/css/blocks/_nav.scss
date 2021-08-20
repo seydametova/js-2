@@ -1,0 +1,68 @@
+.nav {
+    position: absolute;
+    z-index: 100;
+    top: 75px;
+    min-width: 232px;
+    background: #FFFFFF;
+    left: calc(100% - 232px);
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    &__container {
+        padding: 40px 0 135px 35px;
+        & h3 {
+            padding-bottom: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+        & ul {
+            list-style: none;
+        }
+        & a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            &:hover {
+                color: #F16D7F;
+            }
+        }
+        &__parent {
+            &--li {
+                padding-bottom: 12px;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 17px;
+                color: #F16D7F;
+            }
+        }
+        &__child {
+            & li {
+                &:not(:last-child) {
+                    padding: 0 0 12px 25px;
+                }
+                &:last-child {
+                    padding: 0 0 20px 25px;
+                }
+            }
+        }
+    }
+    &__icon-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        & button {
+            background: none;
+            border: none;
+            & svg {
+                &:hover {
+                    cursor: pointer;
+                    path {
+                        fill: #F16D7F;
+                    }
+                }
+            }
+        }
+    }
+}

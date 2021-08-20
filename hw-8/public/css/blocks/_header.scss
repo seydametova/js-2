@@ -1,0 +1,72 @@
+.header {
+    position: relative;
+    background: #222222;
+    &__links {
+        & button {
+            background: none;
+            border: none;
+        }
+        & svg {
+            &:hover {
+                cursor: pointer;
+                path {
+                    fill: #F16D7F;
+                }
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+        &__left {
+            display: flex;
+            align-items: center;
+            &--logo {
+                margin-right: 40px;
+            }
+            &--search {
+                & form {
+                    & input {
+                        margin-right: 10px;
+                        height: 27px;
+                        outline: none;
+                        color: #F8F8F8;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+        &__right {
+            &--menu,
+            &--login {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 508px) {
+    .header {
+        &__links {
+            &__right {
+                &--login {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 436px) {
+    .header {
+        &__links {
+            &__right {
+                &--menu {
+                    display: none;
+                }
+            }
+        }
+    }
+}

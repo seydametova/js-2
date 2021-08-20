@@ -1,0 +1,165 @@
+.footer {
+    &__top {
+        background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/footer-top.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+        min-height: 450px;
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__quote {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                & img {
+                    padding-bottom: 30px;
+                }
+                & p {
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #222224;
+                    text-align: center;
+                    max-width: 360px;
+                    & span {
+                        font-style: italic;
+                    }
+                }
+            }
+            &__subscribe {
+                text-transform: uppercase;
+                text-align: center;
+                &__headline {
+                    padding-bottom: 30px;
+                    & h3 {
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 167.2%;
+                        color: #222224;
+                        & span {
+                            font-size: 18px;
+                            line-height: 167.2%;
+                            color: #222224;
+                        }
+                    }
+                }
+                &__form {
+                    &__email {
+                        min-height: 50px;
+                        background: #E1E1E1;
+                        border: none;
+                        border-radius: 20px 0 0 20px;
+                        padding: 7px 64px 7px 22px;
+                        &:focus {
+                            outline: none;
+                            background-color: lightgrey;
+                        }
+                    }
+                    &__submit {
+                        min-height: 50px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        padding: 7px 22px;
+                        background: #F16D7F;
+                        border: 1px solid #F16D7F;
+                        border-radius: 0 20px 20px 0;
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        background: #222224;
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+            &__copyright {
+                & p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FBFBFB;
+                }
+            }
+            &__icons {
+                display: flex;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+.fab {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 32px;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        background-color: #F16D7F;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__top {
+            &__container {
+                flex-direction: column;
+                &__quote {
+                    padding: 50px 0 50px 0;
+                }
+                &__subscribe {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 398px) {
+    .footer {
+        &__top {
+            &__container {
+                &__subscribe {
+                    &__form {
+                        & input {
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .footer {
+        &__bottom {
+            background: #222224;
+            &__container {
+                min-height: 120px;
+                flex-direction: column-reverse;
+                &__copyright {
+                    padding-bottom: 25px;
+                }
+                &__icons {
+                    padding-top: 25px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

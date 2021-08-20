@@ -1,0 +1,81 @@
+.promo {
+    padding-bottom: 96px;
+    &__boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-transform: uppercase;
+        text-align: center;
+        &__headline {
+            &--style-1 {
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+            &--style-2 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #F16D7F;
+            }
+        }
+        &--small {
+            min-height: 260px;
+            width: 31.58%;
+            margin-bottom: 30px;
+            & span {
+                max-width: 220px;
+            }
+        }
+        &--big {
+            min-height: 180px;
+            width: 100%;
+            & span {
+                max-width: 250px;
+            }
+        }
+        &--common {
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__box-1 {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/promo-box-1.png) no-repeat;
+        }
+        &__box-2 {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/promo-box-2.png) no-repeat;
+        }
+        &__box-3 {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/promo-box-3.png) no-repeat;
+        }
+        &__box-4 {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/promo-box-4.png) no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo {
+        &__boxes {
+            &--small {
+                min-height: 168px;
+            }
+            &--big {
+                min-height: 116px;
+            }
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .promo {
+        padding-bottom: 96px;
+        &__boxes {
+            &--small {
+                width: 100%;
+            }
+        }
+    }
+}
