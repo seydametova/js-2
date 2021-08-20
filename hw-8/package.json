@@ -1,0 +1,33 @@
+{
+  "name": "java-script-advanced",
+  "version": "1.0.0",
+  "description": "Домашние задания по курсу \"Продвинутый курс JavaScript\" на портале GeekBrains.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jasmine": "^3.7.0",
+    "moment": "^2.29.1",
+    "node-static": "^0.7.11",
+    "nodemon": "^2.0.10",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine",
+    "build-dev": "webpack --mode=development --watch",
+    "build-prod": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eagrigorev/java-script-advanced.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eagrigorev/java-script-advanced/issues"
+  },
+  "homepage": "https://github.com/eagrigorev/java-script-advanced#readme",
+  "keywords": []
+}
